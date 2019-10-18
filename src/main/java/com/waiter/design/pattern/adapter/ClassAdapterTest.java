@@ -24,7 +24,7 @@ class ClassAdapter extends Adaptee implements Target {
     }
 }
 
-public class ClassAdaterTest {
+public class ClassAdapterTest {
     public static void main(String[] args) {
         Target target = new ClassAdapter();
         target.request();
