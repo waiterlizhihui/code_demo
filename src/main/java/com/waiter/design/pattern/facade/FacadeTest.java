@@ -8,9 +8,9 @@ package com.waiter.design.pattern.facade;
  * @Version 1.0
  */
 class Facade {
-    private SubSystem1 subSystem1;
-    private SubSystem2 subSystem2;
-    private SubSystem3 subSystem3;
+    private SubSystem1 subSystem1 = new SubSystem1();
+    private SubSystem2 subSystem2 = new SubSystem2();
+    private SubSystem3 subSystem3 = new SubSystem3();
 
     public void method() {
         subSystem1.method1();

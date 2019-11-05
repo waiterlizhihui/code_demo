@@ -56,6 +56,7 @@ class Context {
 
 public class StrategyTest {
     public static void main(String[] args) {
+        //这个环境类好像有点多余啊，直接依赖策略接口不就可以吗?
         Context context = new Context();
         Strategy strategy = new ConcreteStrategyA();
         context.setStrategy(strategy);

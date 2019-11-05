@@ -12,6 +12,7 @@ package com.waiter.design.pattern.builder;
  * 需要构建的产品
  */
 class Product {
+
     private String partA;
     private String partB;
     private String partC;

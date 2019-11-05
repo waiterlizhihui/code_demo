@@ -10,10 +10,17 @@ import java.util.List;
  * @Date 2019/10/24 17:36
  * @Version 1.0
  */
+
+/**
+ * 抽象命令
+ */
 interface AbstractCommand {
     void execute();
 }
 
+/**
+ * 具体命令1
+ */
 class ConcreteCommand1 implements AbstractCommand {
     private CompositeReceiver receiver;
 
@@ -27,6 +34,9 @@ class ConcreteCommand1 implements AbstractCommand {
     }
 }
 
+/**
+ * 具体命令2
+ */
 class ConcreteCommand2 implements AbstractCommand {
     private CompositeReceiver receiver;
 
@@ -40,6 +50,9 @@ class ConcreteCommand2 implements AbstractCommand {
     }
 }
 
+/**
+ * 树枝构件：调用者
+ */
 class CompositeInvoker implements AbstractCommand {
     private List<AbstractCommand> children = new ArrayList<>();
 
@@ -63,6 +76,9 @@ class CompositeInvoker implements AbstractCommand {
     }
 }
 
+/**
+ * 接收者
+ */
 class CompositeReceiver {
     public void action1() {
         System.out.println("接收者的action1()方法被调用");

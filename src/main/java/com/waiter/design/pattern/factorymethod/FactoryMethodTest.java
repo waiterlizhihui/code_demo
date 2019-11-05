@@ -12,7 +12,7 @@ package com.waiter.design.pattern.factorymethod;
  * 抽象产品
  */
 interface Product {
-    public void show();
+    void show();
 }
 
 /**

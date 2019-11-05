@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @ClassName FlyweightTest
- * @Description TOOD
+ * @Description 享元模式代码示例
  * @Author lizhihui
  * @Date 2019/10/22 15:29
  * @Version 1.0
